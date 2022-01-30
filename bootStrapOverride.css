@@ -1,0 +1,102 @@
+
+/*This changes the position of navabr */
+
+
+.mynav a{
+  margin-right: 50px;
+}
+
+/*This changes the font, and the hover of the navbar */
+
+.mynav a:hover{
+  color:#FF0000 !important;
+
+}
+
+
+.golf{
+  font-family: "Stencil Std", "fantasy" !important;
+  font-weight: bold !important;
+font-size: 25px !important;
+  color: #000000
+}
+
+.golfer{
+  font-family: "Stencil Std", "fantasy" !important;
+  font-weight: bold !important;
+  background-color: #FF0000;
+  padding: 15px;
+  color: #000000;
+}
+
+.golfer:hover{
+  background-color: #000000;
+  color: #FF0000;
+}
+
+// Within style tags in your html file
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+} */
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.me{
+  text-align: center;
+    font-family: "Stencil Std", "fantasy";
+
+}
+
+.ratty{
+  width: 80%;
+  height: auto;
+}

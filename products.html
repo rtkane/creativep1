@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Rat Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="style.css" href="">
+  <link rel="stylesheet" href="bootStrapOverride.css">
+
+  <style>
+  body {
+    background-image: url('images/wall.jpg');
+  }
+  </style>
+
+</head>
+  <body>
+
+
+    <ul class="nav justify-content-center mynav">
+      <li class="nav-item">
+        <a class="nav-link active golf" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link golf" href="#">STORE</a>
+      </li>
+        <a class="navbar-brand golfer" href="index.html">RAT</a>
+      <li class="nav-item">
+        <a class="nav-link golf" href="about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link golf" href="contact.html">CONTACT</a>
+      </li>
+    </ul>
+
+    <style>
+      * { box-sizing: border-box; }
+    </style>
+
+    <div class="container-fluid">
+
+
+      <h1 class="me">
+      Winter 2022 Collection
+    </h1>
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="images/shirt1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="images/shirt3.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="images/shirt5.jpg" />
+    </div>
+</div>
+
+      <h1 class="me">
+      Fall 2021 Collection
+    </h1>
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="images/shirt4.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="images/shirt2.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="images/shirt6.jpg" />
+    </div>
+</div>
+
+<h1 class="me">
+  All images are royalty free
+</h1>
+
+  </body>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">I <3 Isaac</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</html>
+
+
+
+
+
+<script>
+  // init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+</script>
